@@ -1,4 +1,4 @@
-import LoginModal from "@/app/(beforeLogin)/_components/LoginMadal";
+import LoginModal from "@/app/(beforeLogin)/_components/LoginModal";
 
 interface Props {}
 
