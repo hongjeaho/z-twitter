@@ -1,7 +1,15 @@
-import { redirect } from "next/navigation";
+import Main from "../_components/Main";
+import Redirect from "./_components/Redirect";
 
-const Login = () => {
-  redirect("/i/flow/login");
+interface Props {}
+
+const Page: React.FC<Props> = () => {
+  return (
+    <>
+      <Redirect />
+      <Main />
+    </>
+  );
 };
 
-export default Login;
+export default Page;
