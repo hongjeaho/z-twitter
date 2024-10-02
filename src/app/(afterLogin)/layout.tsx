@@ -6,6 +6,8 @@ import zLogo from "/public/image/zlogo.png";
 import Image from "next/image";
 import NavMenu from "./_components/NavMenu";
 import LogOutButton from "./_components/LogOutButton";
+import TrandSection from "./_components/TrandSection";
+import FollowRecommend from "./_components/FollowRecommend";
 
 interface Props extends PropsWithChildren {}
 
@@ -34,10 +36,14 @@ const AfterLayout: React.FC<Props> = ({ children }) => {
         <div className={styles.rightSectionInner}>
           <main className={styles.main}>{children}</main>
           <section className={styles.rightSection}>
-            <form className={styles.search}>
-              <CiSearch />
-              <input type="search" />
-            </form>
+            <div style={{ marginBottom: 60, width: "inherit" }}>
+              <form className={styles.search}>
+                <CiSearch />
+                <input type="search" />
+              </form>
+            </div>
+            <TrandSection />
+            <FollowRecommend />
           </section>
         </div>
       </div>
